@@ -1,0 +1,253 @@
+/* Estilo do site - CEEP */
+
+/* Reset do CSS */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#site{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	width: 1024px;
+	margin: 10px auto 0 auto;
+}
+
+#topo{
+	color: #333;
+	height: 100px;
+	font-family: 'Sedgwick Ave', cursive;
+}
+
+#topo .logo{
+	float: left;
+}
+
+#topo h1{
+	font-size: 25px;
+	text-align: center;
+}
+
+#topo h2{
+	font-size: 18px;
+	text-align: right;
+}
+
+#menu{
+	margin-bottom: 40px;
+}
+
+#menu ul{
+	list-style: none;
+}
+
+#menu li{
+	width: 122px;
+	background-color: #006400; /* Cor de Fundo*/
+	color: #FFF; /* Cor da Fonte */
+	padding: 3px;
+	text-align: center;
+	float: left;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+#menu li:hover{
+	background-color: #228B22;
+}
+
+#destaque .foto{
+	width: 400px;
+	float: left;
+	margin-right: 20px;
+}
+
+#destaque .botao{
+	background-color: #005500;
+	padding: 3px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+#destaque .botao:hover{
+	background-color: #008800;
+}
+
+#destaque p{
+	margin-bottom: 10px;
+}
+
+#noticias_home{
+	clear: left;
+}
+
+#noticias_home li{
+	width: 258px;
+	float: left;
+	list-style: none;
+	margin: 15px 25px 0 0;
+}
+
+#noticias_home li:last-child{
+	margin-right: 0;
+}
+
+#sidebar{
+	width: 180px;
+	float: right;
+	margin-left: 10px;
+}
+
+#sidebar h1, #institucional h1, #galeria h1{
+	border-bottom: 5px solid #005500;
+	font-size: 22px;
+	margin: 10px 0;
+	background-color: #008000;
+	color: #FFF;
+	padding-left: 5px;
+}
+
+#sidebar ul{
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+#sidebar li{
+	border-bottom: 1px solid #aaa;
+	padding: 3px;
+}
+
+#sidebar li:last-child{
+	border-bottom: none;
+}
+
+#publicidade{
+	margin: 10px 0;
+	border: 1px solid #ddd;
+	text-align: center;
+	padding: 5px 0;
+}
+
+#institucional{
+	clear: left;
+	width: 834px;
+	padding-top: 15px;
+}
+
+.perfil li{
+	width: 200px;
+	float: left;
+	list-style: none;
+	margin-right: 11px;
+	text-align: center;
+}
+
+.perfil li:last-child{
+	margin-right: 0;
+}
+
+.perfil h2{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.perfil h3{
+	font-size: 14px;
+}
+
+#redondo{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	overflow: hidden;
+}
+
+#rodape{
+	background-color: #333;
+	color: #AAA;
+	text-align: center;
+	padding: 30px 0;
+	clear: both;
+	margin-top: 10px;
+}
+
+#galeria{
+	clear: left;
+	width: 834px;
+	padding-top: 15px;
+}
+
+#galeria li{
+	margin-right: 9px;
+	float: left;
+	list-style: none;
+	width: 157px;
+}
+
+#galeria li:last-child{
+	margin-right: none;
+}
+
+#texto{
+	width: 834px;
+}
+
+#texto p{
+	text-align: justify;
+	margin-bottom: 20px;
+	text-indent: 30px;
+	line-height: 1.5;
+}
+
+#texto .foto{
+	margin: 10px 0;
+	position: relative;
+}
+
+#texto .foto p{
+	text-indent: 0;
+	margin-bottom: 0;
+	font-style: italic;
+	text-align: center;
+}
+
+#texto .legenda{
+	position: absolute;
+	background-color: rgba(0,0,0,0.8);
+	color: #FFF;
+	bottom: 3px;
+	left: 0;
+	width: 100%;
+	padding: 10px 0;
+}
+
+#texto .credito{
+	position: absolute;
+	background-color: #FFF;
+	color: #000;
+	top: 0;
+	left: 50%;
+	margin-left: -100px;
+	width: 200px;
+	padding: 3px;
+	border-radius: 0 0 10px 10px;
+	text-align: center !important; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+#conteudo .redondo{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background-color: #008000;
+	overflow: hidden;
+}*/
