@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Trabalhando com Javascript</title>
+</head>
+<body>
+	<script>
+		var preco;
+		preco = prompt("Digite o valor do produto:");
+
+		var desconto;
+		desconto = prompt("Digite a % do Desconto:");
+
+		// Cálculo do Desconto
+		var final;
+		final = (preco - ((preco * desconto) / 100));
+
+		console.log("O valor do produto com desconto é R$ " + final);
+
+	</script>
+
+</body>
+</html>
