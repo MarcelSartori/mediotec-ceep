@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Trabalhando com Javascript</title>
+</head>
+<body>
+	<script>
+		/* Programa que calcula o IMC e exibe o resultado */
+		
+		var peso = prompt("Digite seu Peso em Kg:");
+		var altura = prompt("Digite sua altura em mt. (exemplo: 1.80):");
+
+		// Calculo o IMC
+		var imc = peso / (altura * altura);
+
+		if (imc < 17){
+			alert("Você está muito abaixo do peso");
+		} else if (imc >= 17 && imc <= 18.49) {
+			alert("Você está abaixo do peso");
+		} else if (imc >= 18.5 && imc <= 24.99) {
+			alert("Você está no seu peso Normal");
+		} else if (imc >= 25 && imc <= 29.99) {
+			alert("Você está acima do peso");
+		} else if (imc >= 30 && imc <= 34.99) {
+			alert("Você está em Obesidade I");
+		} else if (imc >= 35 && imc <= 39.99) {
+			alert("Você está em Obesidade II (severa)");
+		}	else {
+			alert("Você está em Obesidade III (mórbida)");
+		}
+
+	</script>
+
+</body>
+</html>
