@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cálculo de IMC com Javascript</title>
+
+	<style type="text/css">
+		#calculadora{
+			background-color: #d5d5d5;
+			padding: 10px;
+			width: 40%;
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+		}
+
+		#calculadora h1{
+			text-transform: uppercase;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		#calculadora h2{
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		#calculadora span{
+			color: #bd0000;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="calculadora">
+		<h1>Calculadora de IMC</h1>
+		<h2>Peso: <span id="peso"></span></h2>
+		<h2>Altura: <span id="altura"></span></h2>
+		<h2>IMC: <span id ="imc"></span></h2>
+		&nbsp;
+		<h2>Resultado: <span id="resultado"></span></h2>
+	</div>
+
+	<script>
+		/* Programa que calcula o IMC e exibe o resultado */
+		
+		var peso = prompt("Digite seu Peso em Kg:");
+		var altura = prompt("Digite sua altura em mt. (exemplo: 1.80):");
+		var resultado;
+
+		// Calculo o IMC
+		var imc = peso / (altura * altura);
+		if (imc < 17){
+			resultado = "Você está muito abaixo do peso";
+		} else if (imc >= 17 && imc <= 18.49) {
+			resultado = "Você está abaixo do peso";
+		} else if (imc >= 18.5 && imc <= 24.99) {
+			resultado = "Você está no seu peso Normal";
+		} else if (imc >= 25 && imc <= 29.99) {
+			resultado = "Você está acima do peso";
+		} else if (imc >= 30 && imc <= 34.99) {
+			resultado = "Você está em Obesidade I";
+		} else if (imc >= 35 && imc <= 39.99) {
+			resultado = "Você está em Obesidade II (severa)";
+		}	else {
+			resultado = "Você está em Obesidade III (mórbida)";
+		}
+
+		document.getElementById('peso').innerHTML = peso + 'kg';
+		document.getElementById('altura').innerHTML = altura + ' mt';
+		document.getElementById('imc').innerHTML = imc;
+		document.getElementById('resultado').innerHTML = resultado;
+
+	</script>
+</body>
+</html>
